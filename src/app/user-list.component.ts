@@ -7,7 +7,7 @@ import { DataModelManagerService } from "./datamodelmanager.service";
 @Component({
   selector: 'app-student',
   templateUrl: './user-List.component.html',
-  styleUrls: ['./user-List.component.css']
+  styleUrls: []
 })
 export class studentComponent implements OnInit {
 
