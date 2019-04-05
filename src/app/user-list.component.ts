@@ -1,12 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Student } from "./student";
-import { Router } from '@angular/router';
 import { DataModelManagerService } from "./datamodelmanager.service";
 
 
 @Component({
   selector: 'app-student',
-  templateUrl: './user-List.component.html',
+  templateUrl: './user-list.component.html',
   styleUrls: []
 })
 export class studentComponent implements OnInit {
