@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, DoCheck } from '@angular/core';
 
-import { Student, Course } from './Student';
+import { Student, Course } from './student';
 
 @Component({
   selector: 'app-cart-selected-list',

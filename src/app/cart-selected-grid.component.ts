@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, DoCheck } from '@angular/core';
 
-import { Course } from './Student';
+import { Course } from './student';
 
 // Locally-used class that describes the properties
 // of an object used to render a timetable cell
