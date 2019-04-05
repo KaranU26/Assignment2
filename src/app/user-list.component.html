@@ -1,0 +1,30 @@
+<h3>List of Students from the <code>&nbsp;Web Service&nbsp;</code></h3>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Student ID</th>
+      <th>Program</th>
+      <th>First name</th>
+      <th>Date of Birth</th>
+      <th>Email</th>
+      <th>Academic Level</th>
+      <th>GPA</th>
+      <th>Course History</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let u of students'>
+      <td>{{ u.studentId }}</td>
+      <td>{{u.academicProgram}}</td>
+      <td>{{u.familyName}}, {{u.givenName}}</td>
+      <td>{{u.birthDate | date : 'MMM d, y'}}</td>
+      <td>{{u.email}}</td>
+      <td>{{u.academicLevel}}</td>
+      <td>{{u.gpa}}</td>
+      <td>{{u.credits.length}} credits</td>
+      <td>
+          <a routerLink = "/students/detail/{{u._id}}" class="btn btn-default">Select</a>&nbsp;
+      </td>
+    </tr>
+  </tbody>
+</table>
